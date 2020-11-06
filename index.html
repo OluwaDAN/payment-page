@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FONT AWESOME -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+
+<body>
+    <div class="cover">
+
+        <section id="tabs" class="project-tab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 main_cards">
+                        <h5 class="title">  Complete Your Purchase</h5>
+                        <nav>
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Personl Info</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Billing Info</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Confirm Payment</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                
+                               
+                               <div class="form-div">
+                                   <label class="form-label block">Name</label>
+                                   <input class="input" type = "text" required> 
+                               </div>
+
+                               <div class="form-div">
+                                <label class="form-label block">Email Address</label>
+                                <p> The purchase receipt will be sent to this address</p>
+                                <input class="input" type = "text" required> 
+                            </div>
+
+                            <div class="form-div">
+                                <label class="form-label block">Address 1</label>
+                                <input class="input" type = "text" required> 
+                            </div>
+
+                            <div class="form-div">
+                                <label class="form-label block">Address 2</label>
+                                <input class="input" type = "text" required> 
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="form-div">
+                                        <label class="form-label block">State</label>
+                                        <input class="input" type = "text" required> 
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="form-div">
+                                        <label class="form-label block">Local government</label>
+                                        <select class="form-control" id="">
+                                            <option>Ikeja Local Govt</option>
+                                            <option>Alimosho Local Govt</option>
+                                            <option>Egbada LLocal GOvt</option>
+                                            <option>Epe Local Govt</option>
+                                            <option>Surulere Local Govt</option>
+                                          </select>
+                                    </div>
+                                </div>
+
+                               
+                            </div>
+                            <div class="btn-groups"> 
+                                <button class="myBtn next">Next</button>
+                                <button class="myBtn cancel">Cancel</button>
+                            </div>
+                            
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="form-div">
+                                    <label class="form-label block">Name on Card</label>
+                                    <input class="input" type = "text"  defaultValue= "Opera Linux Ahmed" required> 
+                                </div>
+
+                                <div class="form-div">
+                                    <label class="form-label block">Card Type</label>
+                                    <select class="form-control input" id="">
+                                        <option>MasterCard</option>
+                                        <option>Verve</option>
+                                        <option>American Express</option>
+                                   
+                                      </select>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <div class="col-lg-7">
+
+                                        <label class="form-label block">Card Details</label>
+                                        <input class="input" type = "text"   required> 
+                                </div>
+                                    <div class="col-lg-3">
+
+                                        <label class="form-label block">Expiry date</label>
+                                        <input class="input" type = "date"   required> 
+                                </div>
+                                    <div class="col-lg-2">
+
+                                        <label class="form-label block">CVV</label>
+                                        <input class="input" type = "text"   required> 
+                                </div>
+
+                                <div class="btn-groups"> 
+                                    <button class="myBtn next">Next</button>
+                                    <button class="myBtn cancel">Cancel</button>
+                                </div>
+                                </div>
+                             
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="thank_you">
+                                    <span class="mark"></span>
+                                    <h3 class="purchase_complete">Purcahse Completed</h3>
+                                    <p class="completed_para">Please check your email for details concerning this transaction</p>
+
+                                    <a href="#">Return home</a>
+
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+</body>
+
+</html>
+
+

@@ -1,0 +1,210 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto' , sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    color: #1F3C88;
+}
+
+p{
+    font-size: small;
+    color: rgb(110, 91, 91);
+    padding-top: 5px; 
+}
+
+.container{
+    margin: auto;
+} 
+
+.background{
+    clip-path: polygon(0 0, 70% 0%, 100% 0, 100% 66%, 31% 100%, 12% 100%, 0 100%, 0 18%);
+    background-color: #FCDADA;
+    position: relative;
+    height: 788px; 
+}
+
+
+
+
+.billing_info_cardtxt{
+    display: flex;
+}
+
+.block{
+    display:block;
+}
+
+.form-label{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.input{
+    background: white;
+    padding:0.5rem;
+    border:2px solid grey;
+    border-radius: 7px;
+    width:100%;
+    margin-bottom: 1.2rem;
+    
+}
+
+.input:focus{
+    outline: none;
+}
+
+
+.form-div{
+    width:100%;
+    margin:1.2rem .7rem; 
+}
+
+.next{
+    background:orange;
+    color:whitesmoke
+}
+
+.cancel{
+    background:transparent;
+    color:rgba(71, 38, 131, 0.74);
+}
+
+nav{
+    margin-bottom: 5rem;
+}
+
+.myBtn{
+
+    font-weight: 600;
+    opacity:0.7;
+    border-radius: 8px;
+    padding:0.5rem 5rem;
+    border:0;
+    margin:2rem 1rem;
+   
+}
+
+.myBtn:focus{
+    outline: none;
+}
+
+.myBtn:hover{
+    cursor: pointer;
+}
+
+.card_text{
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    height: 60px;
+    width: 500px;
+    border-radius: 9px;
+    border-right: none;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    outline: none;
+}
+
+.btncard{
+    display: block;
+    height: 60px;
+    width: 100px;
+    margin-top: 25px;
+    margin-right: 70px;
+    background-color: #fff;
+    border-radius: 9px;
+    border-left: none;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    outline: none;
+}
+
+
+.title{
+    color:#1F3C88;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+ 
+
+}
+
+.main_cards{
+    max-width: 54rem;
+    margin: auto;
+    margin-top: 5rem;
+
+}
+
+.nav-tabs{
+    border:0;
+    border-bottom: 2px solid grey;
+}
+
+a{
+    color:grey;
+    font-weight: 600;
+}
+
+.nav-tabs .nav-link.active, a .nav-link.active{
+    color:orange;
+    position: relative;
+    border:0;
+    border-radius:10px ;
+  
+}
+
+
+.nav-tabs .nav-link.active::before{
+    position: absolute;
+    content: "";
+    bottom: -6%;
+    left:0;
+    width:100%;
+    height:6px;
+    border-radius:13px ;
+    background: orange;
+}
+
+
+
+.thank_you{
+    background: white;
+
+}
+
+.purchase_complete{
+    text-align: center;
+    font-size: 1.9rem;
+    margin:1rem;
+}
+
+.completed_para{
+    font-size: 1.2rem;
+}
+
+.thank_you a{
+    color:orange;
+    padding-bottom: 0.3rem;
+    text-decoration: underline;
+}
+
+
+@media(max-width: 900px){
+    .form{
+        right: 0px;
+    }
+
+}
+
+
